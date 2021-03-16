@@ -42,27 +42,33 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/texview_resultado">
+
         <ImageView
             android:id="@+id/imageview_pedra"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="rockSelected"
             android:padding="8dp"
-            android:src="@drawable/pedra"/>
+            android:src="@drawable/pedra" />
+
         <ImageView
             android:id="@+id/imageview_papel"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="paperSelected"
             android:padding="8dp"
-            android:src="@drawable/papel"/>
+            android:src="@drawable/papel" />
+
         <ImageView
             android:id="@+id/imageview_tesoura"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="scissorSelected"
             android:padding="8dp"
-            android:src="@drawable/tesoura"/>
+            android:src="@drawable/tesoura" />
 
     </LinearLayout>
 
