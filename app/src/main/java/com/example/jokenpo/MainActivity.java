@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void optionSelected(String optionUser){
         ImageView imageResult = findViewById(R.id.imageview_escolha_do_app);
-        TextView textResult = (TextView) findViewById(R.id.texview_resultado);
+        TextView textResult = findViewById(R.id.texview_resultado);
          int randomAppPlayer = new Random().nextInt(3);//0, 1, 2
         String[] options = {"rock", "paper", "scissor"};
         String optionApp =  options[randomAppPlayer];
